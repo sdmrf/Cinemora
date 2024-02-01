@@ -12,6 +12,10 @@
 
     --backg-1: #222831;
     --backg-2: #393E46;
+    --backg-3: #252A34;
+    --black: #04152d;
+    --black2: #041226;
+    --black3: #020c1b;
     --Text: #EAEAEA;
     --black-lighter: #1c4b91;
     --black-light: #173d77;
@@ -27,7 +31,7 @@
 }
 
 body {
-    background-color: var(--backg-1);
+    background-color: var(--backg-3);
 }
 
 ::-webkit-scrollbar {
