@@ -84,7 +84,7 @@ const Navbar = () => {
     } else if (type === "series") {
       navigate("/explore/series");
     } else {
-      navigate(`/`);
+      navigate(`/Cinemora`);
     }
     setMobileMenu(false);
   };

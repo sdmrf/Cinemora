@@ -1,3 +1,252 @@
-.Footer{
-    height: 100vh;
+@import "../../../mixins.scss";
+
+.Footer {
+  @include xs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.5s;
+  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.5s;
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    @include xs {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: var(--Text);
+      opacity: 0.25;
+      margin-top: 50px;
+
+      @include xs {
+        width: 100%;
+        height: 1px;
+        background-color: var(--Text);
+        opacity: 0.25;
+        margin-top: 20px;
+      }
+    }
+
+    .top {
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+
+      @include xs {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+          cursor: pointer;
+          img {
+            height: 50px;
+          }
+          @include xs {
+            img {
+              height: 30px;
+            }
+          }
+         
+        }
+
+        .desc {
+          display: block;
+          line-height: 18px;
+          color: var(--Text);
+          opacity: 0.5;
+          font-size: 1rem;
+          margin-top: 10px;
+          width: 350px;
+          font-weight: lighter !important;
+
+          @include xs {
+            display: block;
+            line-height: 5px;
+            font-size: 0.3rem;
+            margin-top: 5px;
+            width: 100px;
+            font-weight: lighter !important;
+          }
+        }
+
+        .contacts {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 20px;
+          color: var(--Text);
+
+          @include xs {
+            margin-top: 5px;
+            font-size: 0.5rem;
+          }
+
+          span {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        @include xs {
+          display: flex;
+          flex-direction: row;
+          gap: 0px;
+        }
+        .Links {
+            @include xs {
+                max-width: 70px !important;
+            }
+            
+          h4 {
+            display: block;
+            width: 200px;
+            color: var(--Text);
+            margin-bottom: 35px;
+            font-size: 1.4rem;
+            @include xs {
+              display: block;
+              width: 100px;
+              margin-bottom: 5px;
+              font-size: 0.6rem;
+            }
+          }
+
+          .Items {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            @include xs {
+              gap: 5px;
+            }
+
+            .Item {
+              list-style-type: none;
+
+              a {
+                text-decoration: none;
+                color: var(--Text);
+                opacity: 0.4;
+                font-size: 1.2rem;
+                font-weight: 100;
+                &:hover {
+                  color: var(--main-color);
+                }
+
+                @include xs {
+                  font-size: 0.5rem;
+                }
+              }
+            }
+          }
+          p {
+            display: block;
+            width: 225px;
+            color: var(--Text);
+            opacity: 0.4;
+            font-size: 1rem;
+            font-weight: 100;
+            color: var(--Text);
+
+            @include xs {
+              display: block;
+              width: 50px;
+              font-size: 0.3rem;
+              margin-top: 10px;
+            }
+          }
+
+          button {
+            background: var(--main-color);
+            color: var(--Text);
+            padding: 10px 20px 10px 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            cursor: pointer;
+
+            @include xs {
+              color: var(--Text);
+              margin-top: 20px;
+              padding: 2.5px 5px 2.5px 5px;
+              border-radius: 7.5px;
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      //justify-content: center;
+      gap: 200px;
+      flex-direction: row;
+      margin-top: 50px;
+
+      @include xs {
+        gap: 50px;
+        margin-top: 10px;
+      }
+
+      .policy {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        color: var(--Text);
+        opacity: 0.5;
+
+        @include xs {
+          gap: 5px;
+          font-size: 0.5rem;
+        }
+      }
+
+      .rights {
+        color: var(--Text);
+        opacity: 0.5;
+
+        @include xs {
+          font-size: 0.5rem;
+        }
+      }
+
+      .social {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        color: var(--Text);
+        opacity: 0.5;
+
+        @include xs {
+          gap: 5px;
+        }
+      }
+    }
+  }
 }

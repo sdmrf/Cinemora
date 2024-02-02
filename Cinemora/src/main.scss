@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
 :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    --font-family : 'Andika', sans-serif;
     font-size: 16px;
     line-height: 1;
-    font-weight: 500;
+    font-weight: 100;
+    text-decoration: none;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -17,6 +20,7 @@
     --black2: #041226;
     --black3: #020c1b;
     --Text: #EAEAEA;
+    --Primary: #006BFF;
     --black-lighter: #1c4b91;
     --black-light: #173d77;
     --sec-color: #FF2E63;
